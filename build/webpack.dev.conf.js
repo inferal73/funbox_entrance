@@ -16,29 +16,7 @@ const PORT = process.env.PORT && Number(process.env.PORT)
 
 const devWebpackConfig = merge(baseWebpackConfig, {
   module: {
-    rules: [
-      {
-        test: /\.scss$/,
-        use: [{
-            loader: "style-loader"
-          },
-          {
-            loader: "css-loader"
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              plugins: () => [
-                autoprefixer({ browsers: ['last 3 versions', 'IE > 9', 'Safari 9.1'] }),
-              ],
-            },
-          },
-          {
-            loader: "sass-loader"
-          }
-        ],
-      },
-    ]
+    rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
   },
   devtool: config.dev.devtool,
 

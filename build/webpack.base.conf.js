@@ -31,7 +31,10 @@ module.exports = {
       : config.dev.assetsPublicPath
   },
   resolve: {
-    extensions: ['.js', '.json']
+    extensions: ['.js', '.json'],
+    alias: {
+      '@': resolve('src'),
+    }
   },
   module: {
     rules: [
