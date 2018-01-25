@@ -31,7 +31,7 @@ module.exports = {
       : config.dev.assetsPublicPath
   },
   resolve: {
-    extensions: ['.js', '.json'],
+    extensions: ['.js', '.json']
   },
   module: {
     rules: [
