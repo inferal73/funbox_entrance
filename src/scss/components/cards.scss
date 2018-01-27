@@ -14,6 +14,21 @@
   margin-bottom: 40px;
   width: 320px;
   position: relative;
+  &-disabled, &-selected {
+    .card-sale-text {
+      display: none;
+    }
+  }
+  &-disabled {
+    .card-sale-text-disabled {
+      display: block;
+    }
+  }
+  &-selected {
+    .card-sale-text-selected {
+      display: block;
+    }
+  }
 }
 
 .card input {
@@ -156,6 +171,12 @@
   text-align: center;
   font-size: 1.3rem;
   color: #ffffff;
+  &-disabled {
+    color: #FFFF66;
+  }
+  &-selected, &-disabled {
+    display: none;
+  }
 }
 
 .card-view-content-description {

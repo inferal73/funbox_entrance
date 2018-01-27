@@ -36,7 +36,6 @@ module.exports = {
     "no-prototype-builtins": 0,
     "no-underscore-dangle": 0,
     "no-continue": 0,
-    "no-param-reassign": 0,
     'import/extensions': ['error', 'always', {
       js: 'never'
     }],
@@ -44,7 +43,8 @@ module.exports = {
       props: true,
       ignorePropertyModificationsFor: [
         'acc',
-        'e'
+        'e',
+        'card',
       ]
     }],
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
