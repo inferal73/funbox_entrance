@@ -3,9 +3,9 @@
 > Тестовое задание от FunBox
 
 > Для проверки:
-  - Установить node модули (npm install или yarn)
-  - Собрать скрипты и стили (npm run build)
-  - Запустить сервер express (npm run start)
+  - Установить node модули (`npm install` или `yarn`)
+  - Собрать скрипты и стили (`npm run build`)
+  - Запустить сервер express (`npm run start`)
 
 ## Команды npm
 
