@@ -72,7 +72,7 @@
   }
 }
 
-.card input:checked + .card-view:hover {
+.card.card-selected-hover-style input:checked + .card-view:hover {
   .card-view-bottom {
     border-color: #E52E7A;
   }
