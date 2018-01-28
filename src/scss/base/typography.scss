@@ -47,6 +47,6 @@ p {
 
 a {
   font-size: inherit;
-  color: #1698D9;
-  border-bottom: 1px dashed #1698D9;
+  color: $defaultCard;
+  border-bottom: 1px dashed $defaultCard;
 }
